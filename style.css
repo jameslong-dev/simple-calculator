@@ -1,0 +1,118 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+
+.calculator-ui{
+    margin: 5rem auto;
+    width: 20%;
+}
+
+.result-screen{
+    display: flex;
+    background-color: black;
+    color: white;
+    align-items: center;
+    font-size: 2rem;
+    justify-content: flex-end;
+    padding: 0 .5rem;
+}
+.clear-btn{
+    grid-area: clr;
+}
+.back-btn{
+    grid-area: back;
+}
+.divide-btn{
+    grid-area: divide;
+}
+.num-one{
+    grid-area:num-one
+}
+.num-two{
+    grid-area:num-two
+}
+.num-three{
+    grid-area:num-three
+}
+.num-four{
+    grid-area:num-four
+}
+.num-five{
+    grid-area:num-five
+}
+.num-six{
+    grid-area:num-six
+}
+.num-seven{
+    grid-area:num-seven
+}
+.num-eight{
+    grid-area:num-eight
+}
+.num-nine{
+    grid-area:num-nine
+}
+.multiply-btn{
+    grid-area: multiply-btn;
+}
+.num-zero{
+    grid-area: num-zero;
+}
+.equal-btn{
+    grid-area: equal;
+}
+.number-pad{
+    grid-area: number-pad;
+    display: grid;
+    grid-template-areas: 'clr clr back'
+                         'num-seven num-eight num-nine'
+                         'num-four num-five num-six'
+                         'num-one num-two num-three'
+                         'num-zero num-zero num-zero';
+    row-gap: .25rem;
+    column-gap: .25rem;
+                         
+}
+.function-pad{
+    grid-area: function-pad;
+    display: flex;
+    flex-direction: column;
+    row-gap: .25rem;
+    column-gap: .25rem;
+}
+.button-section{
+    background-color: black;
+    width: 100%;
+    display: grid;
+    grid-template-areas: 'number-pad number-pad number-pad number-pad function-pad';
+                         
+    row-gap: .25rem;
+    column-gap: .25rem;
+}
+
+.num-pad,
+.fn-pad{
+    border-style: none;
+    cursor: pointer;
+    padding: 1.5rem 0;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.num-pad:hover,
+.fn-pad:hover{
+    opacity: 0.9;
+}
+
+
+.num-pad{
+    background-color: #D8D9DB;
+}
+.fn-pad{
+    background-color: #DF974C;
+    color: white;
+}
